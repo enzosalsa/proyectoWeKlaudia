@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <!--cabecera-->
+        <title>Proyecto Final</title>
+        <link rel="stylesheet" href="estilo.css"/>
+        
+    </head>
+    <body>
+        <!--contenido-->
+         <!--contenido-->
+         <script>
+            function mensaje(){
+                alert("SUS DATOS FUERON ENVIADOS CON EXITO, MUCHAS GRACIAS");
+            }
+        </script>
+        <script>
+            function loadProfilePicture(event) {
+            var preview = document.getElementById("profile-picture-preview");
+            preview.style.display = "block";
+            preview.src = URL.createObjectURL(event.target.files[0]);
+            }
+        </script>
+    
+        
+
+        
+        
+            <form>
+                <h1>Ingrese sus datos de CV</h1>
+                <p>Completar el siguiente formulario</p>
+
+           <br>
+           <br>
+       <label for="profile-picture">Imagen de perfil:</label>
+       <br>
+           <br>
+       <input type="file" id="profile-picture" name="profile-picture" accept="image/*" onchange="loadProfilePicture(event)">
+       
+       
+           <br>
+       
+       <br>
+       <img id="profile-picture-preview" src="#" alt="Vista previa de la imagen de perfil" style="display: none;">
+
+
+                <label>Nombre:</label>
+                <br>
+                <br>
+                <input type="text" name="nombre">
+                <br>
+                <br>
+                <label>Apellido:</label>
+                <br>
+                <br>
+                <input type="text" name="apellido">
+                <br>
+                <br>
+                <label>Tel:</label>
+                <br>
+                <br>
+                <input type="text" name="tel">
+                <br>
+                <br>
+                <label>Email:</label>
+                <br>
+                <br>
+                <input type="text" name="email">
+                <br>
+                <br>
+                <label>Estudios:</label>
+                <br>
+                <br>
+                <input type="text" name="estudios">
+                <br>
+                <br>
+                <label>Profesion:</label>
+                <br>
+                <br>
+                <input type="text" name="profesion">
+                <br>
+                <br>
+                    
+                
+                
+                <input type="button" onclick="mensaje()" value="Enviar">
+    
+    
+            </form>
+            
+       
+           
+            
+
+    </body>
+</html>
